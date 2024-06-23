@@ -48,7 +48,9 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
 
         <StripeCheckout
-          stripeKey={process.env.REACT_APP_KEY}
+          stripeKey={
+            "pk_test_51PUhf5HPqq4yOluqXnY9HlmunhSj268f8MTWsAKzBUN2NIS6YvRiep3FYT2njl3hUAQvw6Sl4ezDiVhQHsZHDwWA00QNNbZIOP"
+          }
           token={makePayment}
           name="Buy My Project"
           amount={product.price * 100}

@@ -4,7 +4,9 @@ import Stripe from "stripe";
 import dotenv from "dotenv";
 dotenv.config();
 
-const stripe = new Stripe(process.env.REACT_APP_SECRET);
+const stripe = new Stripe(
+  "sk_test_51PUhf5HPqq4yOluqwrTRRXWjitdRfNBas6DoWvR2BUX6BS5nHZxQVT5fTD8phBYCVEqjgbI1IJdGndEzv2OmEy4I00EE48gvni"
+);
 
 import { v4 as uuidv4 } from "uuid";
 
